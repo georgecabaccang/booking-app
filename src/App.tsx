@@ -1,5 +1,11 @@
+import Navbar from "./layouts/header/navigation/Navbar";
+
 function App() {
-    return <div>Initial Setup</div>;
+    return (
+        <>
+            <Navbar />
+        </>
+    );
 }
 
 export default App;
