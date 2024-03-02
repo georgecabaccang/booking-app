@@ -1,20 +1,4 @@
-$navbar: #47d54c2b;
-$main: #4CAF50;
-$accent: #81C784;
-$text: #333333;
-$secondaryText: #666666;
-$callToAction: #388E3C;
-
-@function navLinkColors($color) {
-  $result: invert($color);
-  $lightness: lightness($result);
-
-  @if ($lightness < 50%) {
-    $result: black;
-  }
-
-  @return $result;
-}
+@import "../../../scss/colorScheme.scss";
 
 @mixin transtions($prop, $values...) {
   -moz-#{$prop}: $values;
@@ -71,7 +55,7 @@ nav {
     color: $defaultActiveText;
 
     &:hover {
-      cursor: auto;
+      cursor: pointer;
       background-color: $defaultActiveBG;
       color: $defaultActiveText;
     }
